@@ -7,9 +7,18 @@
     box-sizing: border-box;
 }
 
+.rot {
+    color: #9a031e;
+}
+
 nav {
     height: 80px;
     display: flex;
+}
+
+img {
+    width: 100%;
+    max-height: 50vh;
 }
 
 .nav__container {
@@ -39,6 +48,7 @@ li {
     text-decoration: none;
     font-size: 24px;
     color: #9a031e;
+    font-weight: bold;
     padding: 8px;
 }
 
@@ -53,4 +63,68 @@ li {
 
 .nav__link--primary:hover {
     text-decoration: none;
+}
+
+#Landung {
+    background-color: rgba(255, 18, 1, 0.1);
+}
+
+header {
+    height: calc(100vh - 80px);
+}
+
+.header__container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 40px;
+    color: #9a031e;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.header__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.btn {
+    background-color: #9a031e;
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+} 
+
+.header__img--wrapper {
+    padding: 20px;
+} 
+
+.img__thing {  
+    padding-right: 88px;
 }
