@@ -7,8 +7,8 @@
     box-sizing: border-box;
 }
 
-.rot {
-    color: #9a031e;
+.purple {
+    color: #7342d6;
 }
 
 nav {
@@ -18,6 +18,7 @@ nav {
 
 img {
     width: 100%;
+    height: 100%;
     max-height: 50vh;
 }
 
@@ -47,7 +48,7 @@ li {
     margin-left: 16px;
     text-decoration: none;
     font-size: 24px;
-    color: #9a031e;
+    color: #7342d6;
     font-weight: bold;
     padding: 8px;
 }
@@ -57,7 +58,7 @@ li {
 }
 
 .nav__link--primary {
-    border: 2px solid #9a031e;
+    border: 2px solid #7342d6;
     border-radius: 4px;
 }
 
@@ -66,7 +67,7 @@ li {
 }
 
 #Landung {
-    background-color: rgba(255, 18, 1, 0.1);
+    background-color: rgba(115, 66, 214, 0.1);
 }
 
 header {
@@ -85,7 +86,7 @@ header {
 
 h1 {
     font-size: 40px;
-    color: #9a031e;
+    color: #7342d6;
     margin-bottom: 24px;
     text-align: center;
 }
@@ -113,7 +114,7 @@ button:active {
 }
 
 .btn {
-    background-color: #9a031e;
+    background-color: #7342d6;
     color: white;
     padding: 12px 24px;
     font-size: 20px;
@@ -122,9 +123,8 @@ button:active {
 } 
 
 .header__img--wrapper {
-    padding: 20px;
+    padding: 20px 0 20px 28px;
 } 
 
-.img__thing {  
-    padding-right: 88px;
-}
+
+/* Highlights /*
