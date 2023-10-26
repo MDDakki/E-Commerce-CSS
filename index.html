@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/6d2ddd682f.js" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
         <title>E-Commerce</title>
     </head>
 
@@ -26,6 +27,25 @@
                             <a href="#" class="nav__link nav__link--primary">Bücher</a>
                         </li>
                     </ul>
+                    <button class="btn__menu" onclick="openMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="menu__backdrop" onclick="closeMenu()">
+                        <button class="btn__menu btn__menu--close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu__links">
+                            <li class="menu__list">
+                                <a href="#" class="menu__link" onclick="closeMenu()" >Home</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#features" class="menu__link" onclick="closeMenu()">Bücher</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link no-cursor" onclick="closeMenu()">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
             <header>
@@ -35,7 +55,9 @@
                         <h2>Finden Sie Ihr Traumbuch mit
                             <span class="purple">Bibliothek</span>
                         </h2>
-                        <button class="btn">Bücher durchstöbern</button>
+                        <a href="#features">
+                            <button class="btn">Bücher durchstöbern</button>
+                        </a>
                     </div>
                     <figure class="header__img--wrapper">
                         <img src="/assets/undraw_personal_notebook_re_d7dc.svg" class="img__thing" alt="">
@@ -189,10 +211,10 @@
                         <div class="bucher2">
                             <div class="buch">
                                 <figure class="buch__img--wrapper">
-                                    <img class="buch__img" src="assets/crack the coding interview.png" alt="">
+                                    <img class="buch__img" src="assets/book-1.jpeg" alt="">
                                 </figure>
                                 <div class="buch__titel">
-                                    Crack the Coding Interview
+                                    The 10X Rule
                                 </div>
                                 <div class="buch__ratings">
                                     <i class="fas fa-star"></i>
@@ -207,10 +229,10 @@
                             </div>
                             <div class="buch">
                                 <figure class="buch__img--wrapper">
-                                    <img class="buch__img" src="assets/crack the coding interview.png" alt="">
+                                    <img class="buch__img" src="assets/book-2.jpeg" alt="">
                                 </figure>
                                 <div class="buch__titel">
-                                    Crack the Coding Interview
+                                    Be obsessed or be average
                                 </div>
                                 <div class="buch__ratings">
                                     <i class="fas fa-star"></i>
@@ -225,10 +247,10 @@
                             </div>
                             <div class="buch">
                                 <figure class="buch__img--wrapper">
-                                    <img class="buch__img" src="assets/crack the coding interview.png" alt="">
+                                    <img class="buch__img" src="assets/book-3.jpeg" alt="">
                                 </figure>
                                 <div class="buch__titel">
-                                    Crack the Coding Interview
+                                    Rich Dad Poor Dad
                                 </div>
                                 <div class="buch__ratings">
                                     <i class="fas fa-star"></i>
@@ -243,10 +265,10 @@
                             </div>
                             <div class="buch">
                                 <figure class="buch__img--wrapper">
-                                    <img class="buch__img" src="assets/crack the coding interview.png" alt="">
+                                    <img class="buch__img" src="assets/book-4.jpeg" alt="">
                                 </figure>
                                 <div class="buch__titel">
-                                    Crack the Coding Interview
+                                    Cashflow Quadrant
                                 </div>
                                 <div class="buch__ratings">
                                     <i class="fas fa-star"></i>
@@ -261,10 +283,10 @@
                             </div>
                             <div class="buch">
                                 <figure class="buch__img--wrapper">
-                                    <img class="buch__img" src="assets/crack the coding interview.png" alt="">
+                                    <img class="buch__img" src="assets/book-5.jpeg" alt="">
                                 </figure>
                                 <div class="buch__titel">
-                                    Crack the Coding Interview
+                                    48 Laws of Power
                                 </div>
                                 <div class="buch__ratings">
                                     <i class="fas fa-star"></i>
@@ -279,10 +301,10 @@
                             </div>
                             <div class="buch">
                                 <figure class="buch__img--wrapper">
-                                    <img class="buch__img" src="assets/crack the coding interview.png" alt="">
+                                    <img class="buch__img" src="assets/book-6.jpeg" alt="">
                                 </figure>
                                 <div class="buch__titel">
-                                    Crack the Coding Interview
+                                    The 5 Seconds Rule
                                 </div>
                                 <div class="buch__ratings">
                                     <i class="fas fa-star"></i>
@@ -297,10 +319,10 @@
                             </div>
                             <div class="buch">
                                 <figure class="buch__img--wrapper">
-                                    <img class="buch__img" src="assets/crack the coding interview.png" alt="">
+                                    <img class="buch__img" src="assets/book-7.jpg" alt="">
                                 </figure>
                                 <div class="buch__titel">
-                                    Crack the Coding Interview
+                                    Your Next Five Moves
                                 </div>
                                 <div class="buch__ratings">
                                     <i class="fas fa-star"></i>
@@ -315,10 +337,10 @@
                             </div>
                             <div class="buch">
                                 <figure class="buch__img--wrapper">
-                                    <img class="buch__img" src="assets/crack the coding interview.png" alt="">
+                                    <img class="buch__img" src="assets/book-8.jpeg" alt="">
                                 </figure>
                                 <div class="buch__titel">
-                                    Crack the Coding Interview
+                                    Mastery
                                 </div>
                                 <div class="buch__ratings">
                                     <i class="fas fa-star"></i>
@@ -331,35 +353,40 @@
                                     14.99€
                                 </div>
                             </div>
-                      </div>
-                </div>
-            </section>
-            <section id="last">
+                        </div>
+                    </div>
+                </section>
+                <section id="last">
+                    <div class="container">
+                        <h2>Entdecken Sie weitere
+                            <span class="purple">Bücher</span>
+                        </h2>
+                        <div class="button__wrapper">
+                            <a href="#features">
+                                <button class="btn">Bücher durchsuchen</button>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
                 <div class="container">
-                    <h2>Entdecken Sie weitere <span class="purple">Bücher</span></h2>
-                    <div class="button__wrapper">
-                    <button class="btn">Bücher durchsuchen</button>
-                 </div>
-                 </div>
-            </section>
-        </main>
-        <footer>
-            <div class="container">
-                <div class="row row_column">
-                    <a href="">
-                    <figure class="footer__logo">
-                        <img src="assets/Library.svg" class="footer__logo--img" alt="">
-                    </figure>
-                  </a>
-                  <div class="footer__list">
-                    <a href="" class="footer__link">Home</a>
-                    <a href="" class="footer__link">Über</a>
-                    <a href="" class="footer__link">Bücher</a>
-                    <a href="" class="footer__link">Kontakt</a>
-                  </div>
-                  <div class="footer__copyright">Copyright &copy; 2023 Bibliothek</div>
+                    <div class="row row_column">
+                        <a href="">
+                            <figure class="footer__logo">
+                                <img src="assets/Library.svg" class="footer__logo--img" alt="">
+                            </figure>
+                        </a>
+                        <div class="footer__list">
+                            <a href="#Landung" class="footer__link">Home</a>
+                            <a href="#highlights" class="footer__link">Über</a>
+                            <a href="#features" class="footer__link">Bücher</a>
+                            <a href="mailto:mohammadddakki@gmail.com" class="footer__link">Kontakt</a>
+                        </div>
+                        <div class="footer__copyright">Copyright &copy; 2023 Bibliothek</div>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </body>
     </body>
 </html>
