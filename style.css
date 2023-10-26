@@ -268,3 +268,19 @@ button:active {
     padding-right: 2px;
     color: #bfbfbf;
 }
+
+.bucher2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+#last {
+    background-color: rgba(115, 66, 214, 0.1);
+}
+
+.button__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
