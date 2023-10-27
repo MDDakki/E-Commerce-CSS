@@ -305,6 +305,7 @@ button:active {
 
 .bucher {
     display: flex;
+    flex-wrap: wrap;
     font-weight: bold;
 }
 
@@ -408,7 +409,7 @@ footer {
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 36px;
     }
     
     h2 {
