@@ -269,7 +269,8 @@ button:active {
 
 .highlight__para {
     text-align: center; 
-     max-width: 280px;
+     max-width: 280px;  
+     margin-bottom: 24px;
 }
 
 .highlight__img {
@@ -287,6 +288,7 @@ button:active {
 .highlight__subtitle {
     font-size: 20px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 /* features */ 
@@ -298,6 +300,7 @@ button:active {
 
 .section__title {
     font-size: 32px;
+    padding-bottom: 24px;
 }
 
 .bucher {
@@ -397,6 +400,30 @@ footer {
     padding: 0 8px;
 }
 
+/* Responsive */ 
+
+@media (max-width: 768px) {
+    .header__description {
+        padding: 0 24px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .buch {
+        width: 50%;
+    }
+}
+
 @media (max-width: 550px) {
     .nav__links {
         display: none;
@@ -405,4 +432,11 @@ footer {
     .btn__menu {
         display: block;
     }
+
+    
+    .highlight {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
 }
